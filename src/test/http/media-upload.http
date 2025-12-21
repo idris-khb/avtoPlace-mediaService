@@ -1,0 +1,5 @@
+### Upload image
+POST http://localhost:8080/api/media/upload
+Content-Type: multipart/form-data
+
+file=@/home/idris/Изображения/Снимок экрана от 2023-12-20 17-38-20.png
