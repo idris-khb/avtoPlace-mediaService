@@ -16,6 +16,7 @@ public class CarPhoto {
 
     @Id
     @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -25,7 +26,7 @@ public class CarPhoto {
     @Column(nullable = false)
     private String url;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Integer position;
 
     public void setFilename(String key) {

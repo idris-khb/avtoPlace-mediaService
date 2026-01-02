@@ -17,6 +17,7 @@ import java.util.UUID;
 public class CarAd {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(nullable = false)
     private UUID id;
 
@@ -29,7 +30,7 @@ public class CarAd {
     @Column(nullable = false)
     private Double price;
 
-    @Column(name = "user_id", nullable = false)
+    @Column(name = "user_id", nullable = true)
     private UUID userId;
 
     @Column(name = "created_at", nullable = false, updatable = false)
