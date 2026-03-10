@@ -36,6 +36,10 @@ dependencies {
     implementation 'software.amazon.awssdk:auth'
 }
 
+bootJar {
+    mainClass = 'com.avtoplace.mediaservice.MediaServiceApplication'
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
