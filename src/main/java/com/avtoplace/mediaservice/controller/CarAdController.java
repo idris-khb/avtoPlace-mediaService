@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/cars")
+@RequestMapping("/media/api/cars")
 @RequiredArgsConstructor
 public class CarAdController {
 
